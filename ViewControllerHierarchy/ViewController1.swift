@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController1: UIViewController {
 
+    private var controllerNameLabel: UILabel = {
+        let controllerNameLabel = UILabel()
+        controllerNameLabel.text = "ViewController1"
+        controllerNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        return controllerNameLabel
+    }()
+
     private let myTextField: UITextField = {
         let myTextField = UITextField()
         myTextField.borderStyle = .line
@@ -43,16 +50,21 @@ class ViewController1: UIViewController {
 
 extension ViewController1 {
     func setupView() {
+        view.addSubview(controllerNameLabel)
         view.addSubview(myTextField)
         view.addSubview(myButton)
+
+        [controllerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30),
+        controllerNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
         
-        myTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        myTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 150).isActive = true
-        myTextField.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        myTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        myTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 150),
+        myTextField.heightAnchor.constraint(equalToConstant: 30),
         
-        myButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        myButton.topAnchor.constraint(equalTo: myTextField.topAnchor, constant: 30).isActive = true
-        myButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        myButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        myButton.topAnchor.constraint(equalTo: myTextField.topAnchor, constant: 30),
+        myButton.heightAnchor.constraint(equalToConstant: 30)
+            ].forEach { $0.isActive = true }
         
     }
 

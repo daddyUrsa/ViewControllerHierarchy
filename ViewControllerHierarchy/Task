@@ -1,11 +1,11 @@
-1. Создать TabBarController с двумя вложенными контроллерами (ViewController1 и ViewController2)
-2. Для Tab Bar Item вставить кастомные иконки (добавить изображение). Размер изображения для иконок Tab Bar Item 25х25 px.
-3. На ViewController1 добавить TextField и Button.
-4. Создать ViewController3, добавить на него Label и Button
-5. Создать программируемый переход (переход в коде) от ViewController1 к ViewController3 с передачей текста в Segue из TextField в Label
-6. На Button во ViewController3 создать переход - Unwind к ViewController2
-7. Создать ViewController4 из xib файла, добавить на него Button с методом возврата к предыдущему контроллеру
-8. На ViewController2 добавить два Button:
-- первый с переходом к ViewController4 (метод present(viewController))
-- второй при нажатии добавляет ViewController5 в качестве дочернего вью контроллера (метод addChildViewController(_ childController: UIViewController)).
-9. Создать ViewController5, который будет добавляться в качестве дочернего вью контроллера. Добавить на него Button, при нажатии убирающий данный вью контроллер из родительского (метод removeFromParentViewController())
++ 1. Создать TabBarController с двумя вложенными контроллерами (ViewController1 и ViewController2)
++ 2. Для Tab Bar Item вставить кастомные иконки (добавить изображение). Размер изображения для иконок Tab Bar Item 25х25 px.
++ 3. На ViewController1 добавить TextField и Button.
++ 4. Создать ViewController3, добавить на него Label и Button
++? 5. Создать программируемый переход (переход в коде) от ViewController1 к ViewController3 с передачей текста в Segue из TextField в Label
++? 6. На Button во ViewController3 создать переход - Unwind к ViewController2
++ 7. Создать ViewController4 из xib файла, добавить на него Button с методом возврата к предыдущему контроллеру
++ 8. На ViewController2 добавить два Button:
++ - первый с переходом к ViewController4 (метод present(viewController))
++ - второй при нажатии добавляет ViewController5 в качестве дочернего вью контроллера (метод addChildViewController(_ childController: UIViewController)).
++ 9. Создать ViewController5, который будет добавляться в качестве дочернего вью контроллера. Добавить на него Button, при нажатии убирающий данный вью контроллер из родительского (метод removeFromParentViewController())

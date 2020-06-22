@@ -11,6 +11,14 @@ import UIKit
 class ViewController3: UIViewController {
 
     var receivedText: String = ""
+
+    private var controllerNameLabel: UILabel = {
+        let controllerNameLabel = UILabel()
+        controllerNameLabel.text = "ViewController3"
+        controllerNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        return controllerNameLabel
+    }()
+
     var myLabel: UILabel = {
         let myLabel = UILabel()
         myLabel.text = "Something"
@@ -41,10 +49,14 @@ class ViewController3: UIViewController {
 
 extension ViewController3 {
     func setupView() {
+        view.addSubview(controllerNameLabel)
         view.addSubview(myLabel)
         view.addSubview(myButton)
         
-        [myLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        [controllerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30),
+        controllerNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+
+        myLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         myLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
         myLabel.heightAnchor.constraint(equalToConstant: 30),
         
