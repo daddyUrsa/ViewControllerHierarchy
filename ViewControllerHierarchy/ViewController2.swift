@@ -45,7 +45,6 @@ class ViewController2: UIViewController {
         view.backgroundColor = .cyan
         setupViews()
     }
-    
 }
 
 extension ViewController2 {
@@ -69,7 +68,6 @@ extension ViewController2 {
         showVC5Button.widthAnchor.constraint(equalToConstant: (view.frame.width / 2) - spaces * 3),
         showVC5Button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50)
         ].forEach { $0.isActive = true }
-        
     }
     
     @objc func moveToVC4() {

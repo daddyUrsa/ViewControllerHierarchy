@@ -59,5 +59,4 @@ extension ViewController5 {
         view.removeFromSuperview()
         removeFromParent()
     }
-
 }

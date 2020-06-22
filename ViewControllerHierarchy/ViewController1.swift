@@ -34,18 +34,12 @@ class ViewController1: UIViewController {
         return myButton
     }()
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
         setupView()
-//        let segue = UIStoryboardSegue(identifier: "segueFrom1To3", source: self, destination: ViewController3())
-//        self.performSegue(withIdentifier: "segueFrom1To3", sender: self)
     }
-    
-
 }
 
 extension ViewController1 {
@@ -65,7 +59,6 @@ extension ViewController1 {
         myButton.topAnchor.constraint(equalTo: myTextField.topAnchor, constant: 30),
         myButton.heightAnchor.constraint(equalToConstant: 30)
             ].forEach { $0.isActive = true }
-        
     }
 
     @objc func tapMyButton() {

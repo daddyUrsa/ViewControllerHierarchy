@@ -43,8 +43,6 @@ class ViewController3: UIViewController {
 
         myLabel.text = receivedText
     }
-    
-
 }
 
 extension ViewController3 {

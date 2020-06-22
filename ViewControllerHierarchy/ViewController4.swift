@@ -32,8 +32,6 @@ class ViewController4: UIViewController {
         view.backgroundColor = .brown
         setupView()
     }
-
-
 }
 
 extension ViewController4 {
