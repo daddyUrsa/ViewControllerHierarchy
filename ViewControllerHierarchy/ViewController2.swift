@@ -16,6 +16,16 @@ class ViewController2: UIViewController {
         controllerNameLabel.translatesAutoresizingMaskIntoConstraints = false
         return controllerNameLabel
     }()
+    
+    private var taskLabel: UILabel = {
+        let taskLabel = UILabel()
+        taskLabel.font = UIFont.systemFont(ofSize: 14)
+        taskLabel.text = "8. На ViewController2 добавить два Button: - первый с переходом к ViewController4 (метод present(viewController)) - второй при нажатии добавляет ViewController5 в качестве дочернего вью контроллера (метод addChildViewController(_ childController: UIViewController))."
+        taskLabel.numberOfLines = 0
+        taskLabel.textAlignment = .justified
+        taskLabel.translatesAutoresizingMaskIntoConstraints = false
+        return taskLabel
+    }()
 
     private let showVC4Button: UIButton = {
         let showVC4Button = UIButton()
@@ -52,6 +62,7 @@ extension ViewController2 {
     func setupViews() {
         let spaces: CGFloat = 16.0
         view.addSubview(controllerNameLabel)
+        view.addSubview(taskLabel)
         view.addSubview(showVC4Button)
         view.addSubview(showVC5Button)
         
@@ -66,7 +77,13 @@ extension ViewController2 {
         showVC5Button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: spaces * -1 ),
         showVC5Button.heightAnchor.constraint(equalToConstant: 50),
         showVC5Button.widthAnchor.constraint(equalToConstant: (view.frame.width / 2) - spaces * 3),
-        showVC5Button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50)
+        showVC5Button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
+        
+        taskLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        taskLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        taskLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+        taskLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+        taskLabel.heightAnchor.constraint(equalToConstant: 150)
         ].forEach { $0.isActive = true }
     }
     

@@ -16,6 +16,16 @@ class ViewController5: UIViewController {
         controllerNameLabel.translatesAutoresizingMaskIntoConstraints = false
         return controllerNameLabel
     }()
+    
+    private var taskLabel: UILabel = {
+        let taskLabel = UILabel()
+        taskLabel.font = UIFont.systemFont(ofSize: 14)
+        taskLabel.text = "9. Создать ViewController5, который будет добавляться в качестве дочернего вью контроллера. Добавить на него Button, при нажатии убирающий данный вью контроллер из родительского (метод removeFromParentViewController())."
+        taskLabel.numberOfLines = 0
+        taskLabel.textAlignment = .justified
+        taskLabel.translatesAutoresizingMaskIntoConstraints = false
+        return taskLabel
+    }()
 
     private let removeFromParentBtn: UIButton = {
         let removeFromParentBtn = UIButton()
@@ -39,6 +49,7 @@ extension ViewController5 {
     func setupView() {
         view.addSubview(controllerNameLabel)
         view.addSubview(removeFromParentBtn)
+        view.addSubview(taskLabel)
 
         [controllerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30),
         controllerNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
@@ -46,7 +57,13 @@ extension ViewController5 {
         removeFromParentBtn.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
         removeFromParentBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         removeFromParentBtn.heightAnchor.constraint(equalToConstant: 30),
-        removeFromParentBtn.widthAnchor.constraint(equalToConstant: 100)
+        removeFromParentBtn.widthAnchor.constraint(equalToConstant: 100),
+        
+        taskLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        taskLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        taskLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+        taskLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+        taskLabel.heightAnchor.constraint(equalToConstant: 150)
         ].forEach{ $0.isActive = true }
     }
 
