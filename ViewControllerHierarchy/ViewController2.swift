@@ -13,6 +13,7 @@ class ViewController2: UIViewController {
     private var controllerNameLabel: UILabel = {
         let controllerNameLabel = UILabel()
         controllerNameLabel.text = "ViewController2"
+        controllerNameLabel.textColor = .black
         controllerNameLabel.translatesAutoresizingMaskIntoConstraints = false
         return controllerNameLabel
     }()
@@ -23,6 +24,7 @@ class ViewController2: UIViewController {
         taskLabel.text = "8. На ViewController2 добавить два Button: - первый с переходом к ViewController4 (метод present(viewController)) - второй при нажатии добавляет ViewController5 в качестве дочернего вью контроллера (метод addChildViewController(_ childController: UIViewController))."
         taskLabel.numberOfLines = 0
         taskLabel.textAlignment = .justified
+        taskLabel.textColor = .black
         taskLabel.translatesAutoresizingMaskIntoConstraints = false
         return taskLabel
     }()

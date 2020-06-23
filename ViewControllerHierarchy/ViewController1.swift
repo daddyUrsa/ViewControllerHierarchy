@@ -13,6 +13,7 @@ class ViewController1: UIViewController {
     private var controllerNameLabel: UILabel = {
         let controllerNameLabel = UILabel()
         controllerNameLabel.text = "ViewController1"
+        controllerNameLabel.textColor = .black
         controllerNameLabel.translatesAutoresizingMaskIntoConstraints = false
         return controllerNameLabel
     }()
@@ -33,6 +34,7 @@ class ViewController1: UIViewController {
         myTextField.layer.cornerRadius = 5
         myTextField.layer.borderColor = CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 0.3)
         myTextField.textAlignment = .center
+        myTextField.textColor = .black
         myTextField.placeholder = "Enter your text"
         myTextField.translatesAutoresizingMaskIntoConstraints = false
         return myTextField

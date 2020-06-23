@@ -15,6 +15,7 @@ class ViewController3: UIViewController {
     private var controllerNameLabel: UILabel = {
         let controllerNameLabel = UILabel()
         controllerNameLabel.text = "ViewController3"
+        controllerNameLabel.textColor = .black
         controllerNameLabel.translatesAutoresizingMaskIntoConstraints = false
         return controllerNameLabel
     }()
@@ -25,6 +26,7 @@ class ViewController3: UIViewController {
         taskLabel.text = "4. Создать ViewController3, добавить на него Label и Button. 6. На Button во ViewController3 создать переход - Unwind к ViewController2"
         taskLabel.numberOfLines = 0
         taskLabel.textAlignment = .justified
+        taskLabel.textColor = .black
         taskLabel.translatesAutoresizingMaskIntoConstraints = false
         return taskLabel
     }()
@@ -32,6 +34,7 @@ class ViewController3: UIViewController {
     var myLabel: UILabel = {
         let myLabel = UILabel()
         myLabel.text = "You wrote: "
+        myLabel.textColor = .black
         myLabel.translatesAutoresizingMaskIntoConstraints = false
         return myLabel
     }()

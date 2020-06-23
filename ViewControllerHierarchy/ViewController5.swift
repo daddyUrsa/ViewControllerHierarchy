@@ -54,7 +54,7 @@ extension ViewController5 {
         [controllerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30),
         controllerNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
 
-        removeFromParentBtn.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
+        removeFromParentBtn.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -80), //Вот этот констрейнт работает не правильно. Он привязывается к bottom а не к safeArea. Это видимо потому, что child". Не пойму как решить это. буду благодарен за подсказку. 
         removeFromParentBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         removeFromParentBtn.heightAnchor.constraint(equalToConstant: 30),
         removeFromParentBtn.widthAnchor.constraint(equalToConstant: 100),

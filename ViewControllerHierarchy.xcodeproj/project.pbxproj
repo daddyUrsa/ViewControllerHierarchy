@@ -14,7 +14,6 @@
 		316CC65A249DF956007A97A2 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316CC659249DF956007A97A2 /* ViewController1.swift */; };
 		316CC65C249DF95E007A97A2 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316CC65B249DF95E007A97A2 /* ViewController2.swift */; };
 		316CC65E249DFDDD007A97A2 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316CC65D249DFDDD007A97A2 /* ViewController3.swift */; };
-		316CC66024A00E30007A97A2 /* Tasks in Resources */ = {isa = PBXBuildFile; fileRef = 316CC65F24A00E30007A97A2 /* Tasks */; };
 		316CC66224A0115D007A97A2 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316CC66124A0115D007A97A2 /* ViewController4.swift */; };
 		316CC66424A01302007A97A2 /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316CC66324A01302007A97A2 /* ViewController5.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		316CC659249DF956007A97A2 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		316CC65B249DF95E007A97A2 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		316CC65D249DFDDD007A97A2 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
-		316CC65F24A00E30007A97A2 /* Tasks */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tasks; sourceTree = "<group>"; };
 		316CC66124A0115D007A97A2 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		316CC66324A01302007A97A2 /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +62,6 @@
 		316CC642249DF400007A97A2 /* ViewControllerHierarchy */ = {
 			isa = PBXGroup;
 			children = (
-				316CC65F24A00E30007A97A2 /* Tasks */,
 				316CC643249DF400007A97A2 /* AppDelegate.swift */,
 				316CC657249DF758007A97A2 /* TabBarController.swift */,
 				316CC659249DF956007A97A2 /* ViewController1.swift */,
@@ -138,7 +135,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				316CC650249DF401007A97A2 /* LaunchScreen.storyboard in Resources */,
-				316CC66024A00E30007A97A2 /* Tasks in Resources */,
 				316CC64D249DF401007A97A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
