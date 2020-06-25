@@ -68,6 +68,6 @@ extension ViewController4 {
 
     @objc func loadPreviousView() {
         dismiss(animated: true, completion: nil)
-        print("Back")
+//        print("Back")
     }
 }

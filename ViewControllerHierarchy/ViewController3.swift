@@ -90,8 +90,9 @@ extension ViewController3 {
     }
 
     @objc func tapMyButton() {
-        let nextVC2 = ViewController2()
-        present(nextVC2, animated: true, completion: nil)
+        let nextVC = TabBarController()
+        nextVC.selectedIndex = 1
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 

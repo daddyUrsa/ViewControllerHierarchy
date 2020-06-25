@@ -23,5 +23,4 @@ class TabBarController: UITabBarController {
 
         viewControllers = tabBarList
     }
-
 }

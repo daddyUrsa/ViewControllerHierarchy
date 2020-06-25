@@ -50,7 +50,7 @@ class ViewController2: UIViewController {
         showVC5Button.addTarget(self, action: #selector(moveToVC5), for: .touchUpInside)
         return showVC5Button
      }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
