@@ -54,6 +54,7 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.popViewController(animated: false)
         view.backgroundColor = .cyan
         setupViews()
     }

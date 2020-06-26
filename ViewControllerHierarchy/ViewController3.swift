@@ -12,6 +12,8 @@ class ViewController3: UIViewController {
 
     var receivedText: String = ""
 
+    let tabBar = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController
+
     private var controllerNameLabel: UILabel = {
         let controllerNameLabel = UILabel()
         controllerNameLabel.text = "ViewController3"
@@ -90,9 +92,13 @@ extension ViewController3 {
     }
 
     @objc func tapMyButton() {
-        let nextVC = TabBarController()
-        nextVC.selectedIndex = 1
-        navigationController?.pushViewController(nextVC, animated: true)
+
+        navigationController?.popViewController(animated: false)
+        tabBar?.selectedIndex = 1
+    
+//        let nextVC = TabBarController()
+//        nextVC.selectedIndex = 1
+//        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 

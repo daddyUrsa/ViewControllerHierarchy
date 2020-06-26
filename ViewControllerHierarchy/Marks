@@ -1,0 +1,13 @@
+
+В 11.4 эта хрень ругается
+    let tabBar = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController
+
+А эта штука не работает толком
+    let tabBar = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+    let keyWindow = UIApplication.shared.windows
+                .filter { $0.isKeyWindow }
+                .first
+    lazy var navBar = keyWindow?.rootViewController as? UINavigationController
+//    lazy var tabBar = navBar?.viewControllers.first(where: { $0 as? UITabBarController } )
+
+

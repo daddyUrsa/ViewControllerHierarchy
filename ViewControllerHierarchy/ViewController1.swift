@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController1: UIViewController {
-    
+
+    let navBar = UINavigationController(rootViewController: TabBarController())
+
     private var controllerNameLabel: UILabel = {
         let controllerNameLabel = UILabel()
         controllerNameLabel.text = "ViewController1"
