@@ -88,17 +88,14 @@ extension ViewController3 {
         taskLabel.heightAnchor.constraint(equalToConstant: 150)
         ]
             .forEach{ $0.isActive = true }
-        
     }
 
     @objc func tapMyButton() {
 
-        navigationController?.popViewController(animated: false)
-        tabBar?.selectedIndex = 1
-    
-//        let nextVC = TabBarController()
-//        nextVC.selectedIndex = 1
-//        navigationController?.pushViewController(nextVC, animated: true)
+        if let controller = tabBar {
+            controller.selectedIndex = 1
+        }
+        navigationController?.popViewController(animated: true)
     }
 }
 
